@@ -13,69 +13,60 @@
 	<script type='text/javascript' src='bootstrap/js/jquery.js?ver=1.11.3'></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="bootstrap/js/jquery-1.7.2.js"></script>
-	<script type="text/javascript">
-	var sjProcess = false;
-	$CDdemo(document).ready(function(){
-		var CaoDungdemoJs = $CDdemo("#demo-menu");
-		CaoDungdemoJs.children("li").eq(0).addClass("first");
-		CaoDungdemoJs.children("li").eq(CaoDungdemoJs.children("li").length - 1 ).addClass("last");
+<!-- 	<script type="text/javascript">
+var sjProcess = false;
+$CDdemo(document).ready(function(){
+	var CaoDungdemoJs = $CDdemo("#demo-menu");
+	CaoDungdemoJs.children("li").eq(0).addClass("first");
+	CaoDungdemoJs.children("li").eq(CaoDungdemoJs.children("li").length - 1 ).addClass("last");
 
-		
-		CaoDungdemoJs.find("a").click(function(){
-			if ($CDdemo(this).attr("target") == '_blank') {
-				window.open($CDdemo(this).attr("href"));
-			} else {
-				location = $CDdemo(this).attr("href");
-			}		
-			return false;
-
-		});	
-		try{
-			var current = $CDdemo("#demo-menu li.opened");
-			var root = current.parents('.accordion-menu'), lis = current.parents('li');
-			$CDdemo('li', root).filter(lis).addClass('opened');
-		} catch(e){
-			console.log(e.message);
-		}
-		
-		$CDdemo("#demo-menu li.opened > .ul-wrapper").css("display","block");
-		// $CDdemo("#demo-menu li.opened > .ul-wrapper>.menu-button").css("background", "url(../images/button-active.png) no-repeat 0px 12px");
-	 
-
-	CaoDungdemoJs.find(".item-wrapper").click(function(){
-		var li = $CDdemo(this).parent();
-		if(!li.hasClass("opened")){
-			// $CDdemo(".menu-button").css("background", "url(../images/button-active.png) no-repeat 0px 12px");
-			var openedLi = li.parent().children(".opened");
-			var ul = li.children(".ul-wrapper");
-			openedLi.children(".ul-wrapper").slideUp(300);
-			openedLi.removeClass("opened");
-			if(li.children(".ul-wrapper").length !=0){
-				li.addClass("opened");		
-				ul.slideDown(300);
-			}
-	}	else{
-			// $CDdemo(".menu-button").css("background", "url(../images/button.png) no-repeat 0px 12px");
-			li.children(".ul-wrapper").slideUp(300);
-			li.removeClass("opened");
-		}
+	
+	CaoDungdemoJs.find("a").click(function(){
+		if ($CDdemo(this).attr("target") == '_blank') {
+			window.open($CDdemo(this).attr("href"));
+		} else {
+			location = $CDdemo(this).attr("href");
+		}		
 		return false;
-	});
-	});
-</script>
-<!-- <script type="text/javascript">
-	    $( document ).ready( function(){
-	        $('.item-wrapper').click('.item-wrapper',function () {
-	             $('.item-wrapper').removeClass('selected');
-	             $(this).addClass('selected')
-	        });
-	    });
-    </script> -->
+
+	});	
+	try{
+		var current = $CDdemo("#demo-menu li.opened");
+		var root = current.parents('.accordion-menu'), lis = current.parents('li');
+		$CDdemo('li', root).filter(lis).addClass('opened');
+	} catch(e){
+		console.log(e.message);
+	}
+CaoDungdemoJs.find(".item-wrapper").click(function(){
+	var li = $CDdemo(this).parent();
+	if(!li.hasClass("opened")){
+		var openedLi = li.parent().children(".opened");
+		var ul = li.children(".ul-wrapper");
+		openedLi.children(".ul-wrapper").slideUp(300);
+		openedLi.removeClass("opened");
+		if(li.children(".ul-wrapper").length !=0){
+			li.addClass("opened");		
+			ul.slideDown(300);
+		}
+}	else{
+		// $CDdemo(".menu-button").css("background", "url(../images/button.png) no-repeat 0px 12px");
+		li.children(".ul-wrapper").slideUp(300);
+		li.removeClass("opened");
+	}
+	return false;
+});
+});
+</script> -->
     <script type="text/javascript">
 		$(document).ready( function (){
 			var acc = document.getElementsByClassName("item-wrapper");
 			var i;
-
+			 $(".item-wrapper").click(function(){
+			 	if(li.children(".ul-wrapper").length !=0){
+		        $(".ul-wrapper").slideDown(1000);
+		    }
+		        $(".ul-wrapper").slideUp(1000);
+    });
 			for (i = 0; i < acc.length; i++) {
 			acc[i].onclick = function(){
 				this.classList.toggle("selected");

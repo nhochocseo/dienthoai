@@ -178,12 +178,13 @@ ul.social li a:before {
 	cursor: pointer;
 	background: none ;
 }
-ul.accordion-menu>li>.item-wrapper {
+ul.accordion-menu>li>.item-wrapper,li.item-wrapper {
 	background: url("../images/bullet-1.png") no-repeat scroll 12px 14px , #242729 repeat-x 0 0;
 	height: 45px;
     line-height: 44px;
     padding: 0px 35px;
     margin: 0;
+        border-bottom: 1px solid #181818;
     border-top: 1px solid #454545;
     position: relative;
 }
@@ -198,11 +199,11 @@ ul.accordion-menu>li>.item-wrapper.selected:after{
 	content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 /*Hover Level1*/
-ul.accordion-menu> li >.item-wrapper:hover{
+ul.accordion-menu> li >.item-wrapper:hover,li.item-wrapper:hover{
 	background: url("../images/bullet-1.png") no-repeat scroll 12px -45px , url(../images/vertical.png) repeat-x 0 0;
 	
 }
-ul.accordion-menu> li >.item-wrapper:before{
+ul.accordion-menu> li >.item-wrapper:before,li.item-wrapper:before{
 	content: "";
 	z-index: 10;
 	position: absolute;
@@ -213,7 +214,7 @@ ul.accordion-menu> li >.item-wrapper:before{
 	background: #636363;
 }
 ul.accordion-menu> li >.item-wrapper:hover:before,
-ul.accordion-menu> li.current >.item-wrapper:before{
+ul.accordion-menu> li.current >.item-wrapper:before,li.item-wrapper:hover:before{
 	background-color: #FF8400;
 }
 
@@ -230,7 +231,6 @@ div.ul-wrapper ul{
 	padding: 0;margin: 0;
 }
 div.ul-wrapper > ul > li{
-	border-left: 5px solid #ccc;
     border-bottom: 1px solid #9C8383;
     background: url(../images/li.png) no-repeat 10px 12px;
     background-color: #1F1C1C;
@@ -280,7 +280,3 @@ div.ul-wrapper > ul ul > li:hover{
 .selected {
 		background: url("../images/bullet-1.png") no-repeat scroll 12px 14px ,url(../images/button.png) no-repeat 265px 12px, #242729 repeat-x 0 0;
 }
-.selected-active {
-	background: url("../images/bullet-1.png") no-repeat scroll 12px -45px ,url(../images/button-active.png) no-repeat 265px 12px,
- url(../images/vertical.png) repeat-x 0 0
-		    }

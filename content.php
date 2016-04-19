@@ -24,15 +24,13 @@
 <div class="module_menu">
 	<div class="module-content clearfix">
 		<ul class="accordion-menu" id="demo-menu">
-			<li>
-				<div class="item-wrapper">
-					<a href="/category1">Category 1</a>	
-				</div>
+			<li class="item-wrapper">
+				<a href="/category1">Category 1</a>	
 			</li>
 			<li>
 				<div class="item-wrapper">
-						<a href="/category2">Category 2</a>
-					</div>
+					<a href="/category2">Category 2</a>
+				</div>
 				<div class="ul-wrapper">
 					<ul>
 						<li>
@@ -67,10 +65,8 @@
 					</ul>
 				</div>
 			</li>
-			<li>
-				<div class="item-wrapper">
+			<li class="item-wrapper">
 					<a href="/category4">Category 4</a>
-				</div>
 			</li>
 		</ul>
 	</div>
