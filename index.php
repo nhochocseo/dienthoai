@@ -1,6 +1,6 @@
 <?php 
 include("head.php");
-include("content.php");
+include("container.php");
 include("footer.php");
  ?>
 
