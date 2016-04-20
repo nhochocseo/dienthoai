@@ -218,7 +218,7 @@ ul.accordion-menu> li.current >.item-wrapper:before,li.item-wrapper:hover:before
 	background-color: #FF8400;
 }
 
-.accordion-menu>li>.item-wrapper a {
+.accordion-menu>li>.item-wrapper a,li.item-wrapper a {
 	font-size: 133.3%;
 
 }
