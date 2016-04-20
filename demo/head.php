@@ -10,19 +10,19 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
 	<link rel='stylesheet' id='wpbootstrap-theme-css'  href='bootstrap/css/bootstrap-theme.min.css?ver=4.4.2' type='text/css' media='all' />
 	<link rel='stylesheet' id='wpfont-awesome-css'  href='bootstrap/font-awesome-4.5.0/css/font-awesome.min.css?ver=4.4.2' type='text/css' media='all' />
-	<script type='text/javascript' src='bootstrap/js/jquery.js?ver=2.2.3'></script>
+	<script type='text/javascript' src='bootstrap/js/jquery.js?ver=1.11.3'></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="bootstrap/js/jquery-2.2.3.min.js"></script>
+	<script src="bootstrap/js/jquery-1.7.2.js"></script>
     <script type="text/javascript">
 		$(document).ready( function (){
-			var CDdemoJsMenu = document.getElementsByClassName("icy-dropdown");
+			var CDdemoJsMenu = document.getElementsByClassName("item-wrapper");
 			var i;
 			for (i = 0; i < CDdemoJsMenu.length; i++) {
 				CDdemoJsMenu[i].onclick = function(){
-					this.classList.toggle("active");
+					this.classList.toggle("selected");
 					this.nextElementSibling.classList.toggle("show");
-				}
 			}
+		}
 		});
 	</script>
 </head>
