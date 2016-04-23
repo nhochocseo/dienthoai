@@ -18,7 +18,7 @@
 				<a class="" href=""><i class="fa fa-heart"></i></a>
 			</li>
 		</ul>
-	</div> <!-- End moduls social -->
+	</div>
 		<ul class="icy-menu">
 			<li class="list">
 				<a href="/category1">Category 1</a>	
@@ -59,40 +59,6 @@
 			<li class="list">
 				<a href="/category4">Category 4</a>
 			</li>
-		</ul> <!-- End ICY Meneu -->
-	<div class="icy-login">
-		<h3 class="icy-login-title">
-			<i class="icon"></i>Đăng Nhập
-		</h3>
-		<div class="icy-login-content">
-			<form action="login.php" method="POST">
-				<div class="icy-user">
-					<span class="icy-addon">
-						<i class="fa fa-user" aria-hidden="true"></i>
-					</span>
-					<input class="icy-input-login" type="text" name="user" placeholder="Tài Khoản" >
-				</div>
-				<div class="icy-password">
-					<span class="icy-addon">
-						<i class="fa fa-lock" aria-hidden="true"></i>
-					</span>
-					<input  class="icy-input-login" type="password" name="password" placeholder="Mật Khẩu">
-				</div>
-				<div class="icy-login-left">
-					<div class="icy-brand">
-						<input type="checkbox" name="remember" value="yes"> <span>Ghi nhớ</span>
-					</div>
-					<ul class="icy-create">
-						<li>
-							<a href="/register.php">Tạo một tài khoản !</a>
-						</li>
-					</ul>
-				</div>
-				<div class="icy-login-right">
-					<button type="submit" name="submit" class="icy-btnlogin">Log in<i class="icy-next-login"></i></button>
-				</div>
-			</form>
-			<div class="clear"></div>
-		</div>
-	</div>
+		</ul>
+
 	</div><!-- End Coll 3 -->
