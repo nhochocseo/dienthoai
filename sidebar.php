@@ -1,7 +1,26 @@
-  <div class="col-md-3 col-md-pull-9">
-  	<div class="mod-social">
-		<h3 class="social-title"><span>Follow Me Now </span></h3>
-		<ul class="social">
+<div id="sidebar" class="hidden-xs col-md-3 col-sm-12 col-xs-12">
+  	<div class="icy-sidebar">
+		<h3 class="icy-shopping-cart"><span>Giỏ Hàng</span></h3>
+		<ul class="icy-list-cart">
+			<li>
+				Sản Phảm : <span class="icy-monney-cart"> 0 </span>
+			</li>
+			<li>
+				Tổng Tiền : <span class="icy-monney-cart"> 0 VNĐ</span>
+			</li>
+			<li>
+				Miễn phí vận chuyển hàng !
+			</li>
+			<ul class="icy-order-cart">
+                <li>
+                    <a href="">Thanh Toán</a>
+                </li>
+                <li>
+                    <a href="">Xóa Giỏ Hàng</a>
+                </li>
+            </ul>
+		</ul>
+		<!-- <ul class="social">
 			<li>
 				<a class="" href=""><i class="fa fa-facebook"></i></a>
 			</li>
@@ -17,7 +36,7 @@
 			<li>
 				<a class="" href=""><i class="fa fa-heart"></i></a>
 			</li>
-		</ul>
+		</ul> -->
 	</div> <!-- End moduls social -->
 		<ul class="icy-menu">
 			<li class="list">
@@ -94,5 +113,8 @@
 			</form>
 			<div class="clear"></div>
 		</div>
+	</div>
+	<div class="icy-contact">
+		<i class="icon fa fa-envelope"></i>icy@abc.com
 	</div>
 	</div><!-- End Coll 3 -->

@@ -8,10 +8,23 @@
     <title>Demo HTML</title>
     <link rel="stylesheet" type="text/css" media="screen" href="libs/icy-css.php">
     <script type="text/javascript" src="libs/icy-js.php"></script>
+     <!-- Include Cloud Zoom CSS. -->
+        <link rel="stylesheet" type="text/css" href="/libs/cloudzoom.css" />
+
+        <!-- Include Cloud Zoom script. -->
+        <script type="text/javascript" src="/libs/cloudzoom.js"></script>
+
+        <!-- Call quick start function. -->
+        <script type="text/javascript">
+            CloudZoom.quickStart({
+        zoomPosition: 'inside',
+        autoInside: true
+    });
+        </script>    
 </head>
 
 <body>
-    <div id="wraper">
+    <div id="main-content" class="container sidebar-right" role="main">
         <div class="navbar navbar-inverse">
             <div class="logo">
                 <img src="logo.png" alt="Demo Shop">
@@ -47,7 +60,7 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="navbar-form navbar-right" role="search">
+                <form class="icy-search navbar-form navbar-right" role="search">
                     <input type="search" placeholder="Tìm Kiếm....">
                 </form>
             </div>
